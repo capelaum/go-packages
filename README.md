@@ -1,2 +1,3 @@
-# capelaum-go-packages
-repository for capelaum go packages
+# Capelaum Go Packages
+
+Repository for capelaum Go packages
