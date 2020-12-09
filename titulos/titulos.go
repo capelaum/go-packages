@@ -20,7 +20,7 @@ func Titulos(urls ...string) <-chan string {
 			// cria um objeto de Regex que pode ser usado para combinar com uma string
 			r, _ := regexp.Compile("<title>(.*?)</title>")
 
-			// cria um slice de strings que combinam entre o objeto regex e o parametro string
+			// cria um slice de strings que combinam entre o objeto regex e o parametro html em formato string
 			c <- r.FindStringSubmatch(string(html))[1]
 		}(url)
 	}
